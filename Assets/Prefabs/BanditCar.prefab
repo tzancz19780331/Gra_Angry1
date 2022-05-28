@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7935147759758849051
 Transform:
@@ -98,5 +98,5 @@ MonoBehaviour:
   bomb: {fileID: 1121915111540975846, guid: 86180392ed8ecc2458bc498c9ca734e9, type: 3}
   bombsAmount: 5
   banditCarVerticalSpeed: 2
-  banditVarHorizontalSpeed: 5
+  banditVarHorizontalSpeed: 4
   bombDelay: 1.5

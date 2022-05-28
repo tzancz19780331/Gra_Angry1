@@ -40,7 +40,7 @@ public class BanditCarBehaviour : MonoBehaviour
            }
            else
            {
-               banditCarPos = Vector2.Lerp(transform.position, RedCar.transform.position, Time.fixedDeltaTime * banditVarHorizontalSpeed);
+               banditCarPos = Vector3.Lerp(transform.position, RedCar.transform.position, Time.fixedDeltaTime * banditVarHorizontalSpeed);
                transform.position = new Vector3(banditCarPos.x, transform.position.y, 0);
            
                 Delay -= Time.deltaTime;

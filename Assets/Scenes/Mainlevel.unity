@@ -123,7 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< Updated upstream
 --- !u!1 &35253280
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,13 +231,12 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-=======
---- !u!4 &130100999 stripped
+  
 Transform:
   m_CorrespondingSourceObject: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
   m_PrefabInstance: {fileID: 876825319}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
+
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,11 +319,8 @@ Transform:
   m_Children:
   - {fileID: 35253281}
   - {fileID: 1733116770}
-<<<<<<< Updated upstream
   - {fileID: 1211831655}
-=======
   - {fileID: 1456065135}
->>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -416,7 +411,6 @@ Transform:
   m_Father: {fileID: 1273372241}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
 --- !u!1 &1211831654
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,8 +517,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
-=======
->>>>>>> Stashed changes
 --- !u!1 &1273372239
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,12 +530,8 @@ GameObject:
   - component: {fileID: 1273372244}
   - component: {fileID: 1273372245}
   - component: {fileID: 1273372242}
-<<<<<<< Updated upstream
   - component: {fileID: 1273372240}
   - component: {fileID: 1273372247}
-=======
-  - component: {fileID: 1273372246}
->>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Player
@@ -564,7 +552,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   civilCar: {fileID: 3239680648720164630, guid: 7c7d39cf3fd985f41adb438b83b1e807, type: 3}
-<<<<<<< Updated upstream
   civilCarSpawnDelay: 1
   civilCarsAmount: 5
   banditCar: {fileID: 7935147759758849054, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
@@ -582,10 +569,9 @@ MonoBehaviour:
   pointsPerBanditCar: 15
   pointsPerBomb: 10
   pointsPerPoliceCar: 25
-=======
   civilCarSpawnDelay: 0
   civilCarsAmount: 0
->>>>>>> Stashed changes
+
 --- !u!4 &1273372241
 Transform:
   m_ObjectHideFlags: 0
@@ -599,10 +585,7 @@ Transform:
   m_Children:
   - {fileID: 1943087690}
   - {fileID: 922912204}
-<<<<<<< Updated upstream
-=======
   - {fileID: 130100999}
->>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -651,13 +634,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 055afecff29c6fc4e966865eef9b6e35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
   bomb: {fileID: 1121915111540975846, guid: 86180392ed8ecc2458bc498c9ca734e9, type: 3}
   bombsAmount: 1
-=======
   bomb: {fileID: 7935147759758849054, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
   bombsAmount: 0
->>>>>>> Stashed changes
   banditCarVerticalSpeed: 2
   banditVarHorizontalSpeed: 5
   bombDelay: 1.5
@@ -677,12 +657,9 @@ MonoBehaviour:
   explosion: {fileID: 0}
   bombDamage: 20
   bombSpeed: 3
-<<<<<<< Updated upstream
   pointsPerBomb: 0
 --- !u!114 &1273372247
-=======
 --- !u!114 &1273372246
->>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -691,7 +668,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1273372239}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: b1d46875b279e0847af79e369dac72f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -700,14 +676,18 @@ MonoBehaviour:
   civilCarSpeed: 5
   direction: -1
   pointsPerCar: 0
-=======
   m_Script: {fileID: 11500000, guid: f857ce9042fda9449a53d75445ffca2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   civilCar: {fileID: 3239680648720164630, guid: 7c7d39cf3fd985f41adb438b83b1e807, type: 3}
   civilCarSpawnDelay: 1
   civilCarsAmount: 5
->>>>>>> Stashed changes
+  m_Script: {fileID: 11500000, guid: f857ce9042fda9449a53d75445ffca2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  civilCar: {fileID: 3239680648720164630, guid: 7c7d39cf3fd985f41adb438b83b1e807, type: 3}
+  civilCarSpawnDelay: 1
+  civilCarsAmount: 5
 --- !u!1 &1456065134
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,21 +712,18 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456065134}
-<<<<<<< Updated upstream
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.009333292, y: 0.19305363, z: 0}
   m_LocalScale: {x: 1, y: 0.99009913, z: 0.9900991}
   m_Children: []
   m_Father: {fileID: 1689294817}
   m_RootOrder: 0
-=======
   m_LocalRotation: {x: -0, y: -0, z: 0.0015821978, w: 0.9999988}
   m_LocalPosition: {x: -0.020170594, y: 1.9100091, z: 11}
   m_LocalScale: {x: 6, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 519420032}
   m_RootOrder: 1
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!108 &1456065136
 Light:

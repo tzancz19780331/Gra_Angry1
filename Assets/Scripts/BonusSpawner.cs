@@ -1,9 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class BonusSpawner : MonoBehaviour
-{
+public class BonusSpawner : MonoBehaviour{
 
 public GameObject[] bonuses;
 public int minDelay;
@@ -18,7 +16,6 @@ void Start()
 
 void Update()
 {
-
     delay -= Time.deltaTime;
     if(delay <= 0)
     {

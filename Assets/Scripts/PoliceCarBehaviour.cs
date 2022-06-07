@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PoliceCarBehaviour : MonoBehaviour
@@ -10,11 +9,10 @@ public class PoliceCarBehaviour : MonoBehaviour
     public GameObject bullet;
     public float shootingSeriesDelay;
     public float singleShotDelay;
-
     public bool isLeft = false;
     public float policeCarVerticalSpeed;
     public int bulletsInSeries;
-    //public GameObject explosion;
+    public GameObject explosion;
     //[HideInInspector]
     public int pointsPerCar;
     private float lightShowDelay;
@@ -35,13 +33,11 @@ public class PoliceCarBehaviour : MonoBehaviour
         {
             blueLight.enabled = false;
             redLight.enabled = true;
-        }
-        else if (lightShowDelay <= lightDelay && lightShowDelay > 0)
+        }else if (lightShowDelay <= lightDelay && lightShowDelay > 0)
         {
             redLight.enabled = false;
             blueLight.enabled = true;
-        }
-        else if (lightShowDelay <= 0)
+        }else if (lightShowDelay <= 0)
         {
             lightShowDelay = 2 * lightDelay;
         }
@@ -49,8 +45,7 @@ public class PoliceCarBehaviour : MonoBehaviour
         if (gameObject.transform.position.y < -3.8f)
         {
             gameObject.transform.Translate(new Vector3(0, 1, 0) * policeCarVerticalSpeed * Time.deltaTime);
-        }
-        else
+        }else
         {
             shootDelay -= Time.deltaTime;
             if (shootDelay <= 0)
@@ -63,14 +58,13 @@ public class PoliceCarBehaviour : MonoBehaviour
 
     IEnumerator Shoot()
     {
-        for (int i = bulletsInSeries; i > 0; i--)
+        for (int i = bulletsInSeries; i >0; i--)
         {
             bulletObj = (GameObject)Instantiate(bullet, transform.position, Quaternion.identity);
             if (isLeft == true)
             {
                 bulletObj.GetComponent<Bullet>().direction = 1;
-            }
-            else if (isLeft == false)
+            }else if (isLeft == false)
             {
                 bulletObj.GetComponent<Bullet>().direction = -1;
             }
@@ -82,16 +76,15 @@ public class PoliceCarBehaviour : MonoBehaviour
     {
         if (obj.gameObject.tag == "Barrier")
         {
-           /* if (isLeft == true)
+            if (isLeft == true)
             {
                 WaveManager.isLeft = false;
-            }
-            else if (isLeft == false)
+            }else if (isLeft == false)
             {
                 WaveManager.isRight = false;
             }
             PointsManager.points += pointsPerCar;
-            Instantiate(explosion, gameObject.transform.position, Quaternion.identity);*/
+            Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

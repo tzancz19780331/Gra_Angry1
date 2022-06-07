@@ -10,14 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 3239680648720164625}
   - component: {fileID: 3239680648720164626}
-  - component: {fileID: 3239680648720164627}
   - component: {fileID: 3239680648720164628}
   - component: {fileID: 3239680648720164629}
-  - component: {fileID: 3239680648720164591}
-  - component: {fileID: 3239680648720164624}
+  - component: {fileID: -2971077059714906131}
+  - component: {fileID: 3565593041732511225}
   m_Layer: 0
   m_Name: Civil Car
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3239680648720164630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.63, y: 3.79, z: 0}
+  m_LocalPosition: {x: 0.612, y: 3.897, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -87,32 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3239680648720164627
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3239680648720164630}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.019627154, y: 0.09281433}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.995, y: 1.695}
-    newSize: {x: 0.995, y: 1.695}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7594739, y: 1.3916085}
-  m_EdgeRadius: 0
 --- !u!50 &3239680648720164628
 Rigidbody2D:
   serializedVersion: 4
@@ -146,8 +119,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1d46875b279e0847af79e369dac72f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crashDamage: 20
+  explosion: {fileID: 0}
   civilCarSpeed: 5
---- !u!61 &3239680648720164591
+  direction: -1
+  pointsPerCar: 0
+--- !u!61 &-2971077059714906131
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,10 +134,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.014633536, y: -0.78909767}
+  m_Offset: {x: 0.006700963, y: 0.0038061142}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -171,9 +148,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.34542692, y: 0.21878076}
+  m_Size: {x: 0.70810133, y: 1.5632234}
   m_EdgeRadius: 0
---- !u!61 &3239680648720164624
+--- !u!61 &3565593041732511225
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,7 +163,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03221622, y: 0.7651355}
+  m_Offset: {x: -0.015494198, y: -0.8271371}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -197,5 +174,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3184591, y: 0.19694567}
+  m_Size: {x: 0.5557453, y: 0.089741945}
   m_EdgeRadius: 0

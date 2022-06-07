@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
             spawnedExplosion.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
             Destroy(this.gameObject);
         }
-        else if (obj.gameObject.tag == "Shield" || obj.gameObject.tag == "Barrier" || obj.gameObject.tag == "PoliceCar")
+        else if ( obj.gameObject.tag == "Barrier" || obj.gameObject.tag == "PoliceCar")
         {
             Destroy(this.gameObject);
         }

@@ -231,12 +231,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-  
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-  m_PrefabInstance: {fileID: 876825319}
-  m_PrefabAsset: {fileID: 0}
-
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,67 +314,9 @@ Transform:
   - {fileID: 35253281}
   - {fileID: 1733116770}
   - {fileID: 1211831655}
-  - {fileID: 1456065135}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &876825319
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1273372241}
-    m_Modifications:
-    - target: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.6214506
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.8573606
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935147759758849051, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7935147759758849054, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-      propertyPath: m_Name
-      value: BanditCar
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
 --- !u!1 &922912203
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,8 +341,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922912203}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8, y: -3.9, z: -0.99513245}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.16, y: -3.71, z: -0.99513245}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1273372241}
   m_RootOrder: 1
@@ -425,7 +361,7 @@ GameObject:
   - component: {fileID: 1211831656}
   m_Layer: 0
   m_Name: Barrier
-  m_TagString: Barrier
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -480,7 +416,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.9259138, y: -1.111652}
@@ -531,7 +467,9 @@ GameObject:
   - component: {fileID: 1273372245}
   - component: {fileID: 1273372242}
   - component: {fileID: 1273372240}
-  - component: {fileID: 1273372247}
+  - component: {fileID: 1273372246}
+  - component: {fileID: 1273372248}
+  - component: {fileID: 1273372249}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Player
@@ -569,9 +507,6 @@ MonoBehaviour:
   pointsPerBanditCar: 15
   pointsPerBomb: 10
   pointsPerPoliceCar: 25
-  civilCarSpawnDelay: 0
-  civilCarsAmount: 0
-
 --- !u!4 &1273372241
 Transform:
   m_ObjectHideFlags: 0
@@ -585,7 +520,6 @@ Transform:
   m_Children:
   - {fileID: 1943087690}
   - {fileID: 922912204}
-  - {fileID: 130100999}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -636,8 +570,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bomb: {fileID: 1121915111540975846, guid: 86180392ed8ecc2458bc498c9ca734e9, type: 3}
   bombsAmount: 1
-  bomb: {fileID: 7935147759758849054, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
-  bombsAmount: 0
   banditCarVerticalSpeed: 2
   banditVarHorizontalSpeed: 5
   bombDelay: 1.5
@@ -654,11 +586,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 103eb542bdb06be418fec22ba72e079e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
+  explosion: {fileID: 4788389478608329679, guid: 1b11c0462dfa6f848bb2d4b413771392, type: 3}
   bombDamage: 20
   bombSpeed: 3
   pointsPerBomb: 0
---- !u!114 &1273372247
 --- !u!114 &1273372246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,22 +603,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashDamage: 20
-  explosion: {fileID: 0}
+  explosion: {fileID: 4788389478608329679, guid: 1b11c0462dfa6f848bb2d4b413771392, type: 3}
   civilCarSpeed: 5
   direction: -1
   pointsPerCar: 0
-  m_Script: {fileID: 11500000, guid: f857ce9042fda9449a53d75445ffca2f, type: 3}
+--- !u!114 &1273372248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273372239}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f3ec32f65134934fbd6659194b0c338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  civilCar: {fileID: 3239680648720164630, guid: 7c7d39cf3fd985f41adb438b83b1e807, type: 3}
-  civilCarSpawnDelay: 1
-  civilCarsAmount: 5
-  m_Script: {fileID: 11500000, guid: f857ce9042fda9449a53d75445ffca2f, type: 3}
+  isDurability: 1
+  isShield: 0
+  isSpeed: 1
+  bonusSpeed: 10
+  repairPoints: 20
+  speedBoost: 5
+  duration: 1
+--- !u!114 &1273372249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273372239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26382324842a8644d97dfc833a6fec1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  civilCar: {fileID: 3239680648720164630, guid: 7c7d39cf3fd985f41adb438b83b1e807, type: 3}
-  civilCarSpawnDelay: 1
-  civilCarsAmount: 5
+  explosion: {fileID: 4788389478608329679, guid: 1b11c0462dfa6f848bb2d4b413771392, type: 3}
+  bulletDamage: 5
+  direction: 0
+  bulletSpeed: 3
 --- !u!1 &1456065134
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,12 +672,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1689294817}
   m_RootOrder: 0
-  m_LocalRotation: {x: -0, y: -0, z: 0.0015821978, w: 0.9999988}
-  m_LocalPosition: {x: -0.020170594, y: 1.9100091, z: 11}
-  m_LocalScale: {x: 6, y: 10, z: 1}
-  m_Children: []
-  m_Father: {fileID: 519420032}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!108 &1456065136
 Light:
@@ -880,8 +828,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689294813}
   m_LocalRotation: {x: -0, y: -0, z: 0.0015821978, w: 0.9999988}
-  m_LocalPosition: {x: 0.28, y: -0.21, z: 1}
-  m_LocalScale: {x: 6, y: 10.1, z: 1.01}
+  m_LocalPosition: {x: -0.0249, y: -0.1288, z: 1}
+  m_LocalScale: {x: 6.6096, y: 10.264129, z: 1.01}
   m_Children:
   - {fileID: 1456065135}
   m_Father: {fileID: 0}

@@ -1,12 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
-{
+public class Bullet : MonoBehaviour{
+    
     public GameObject explosion;
     public int bulletDamage;
-    [HideInInspector]
+    //[HideInInspector]
     public int direction;
     public float bulletSpeed;
 

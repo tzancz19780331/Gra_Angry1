@@ -15,10 +15,10 @@ public class Bonuses : MonoBehaviour
     [Header("Durability Setings")]
     public float repairPoints;
 
-    [Header("Shield Settings")]
-    public GameObject shield;
-    private GameObject RedCar;
-    private Vector3 RedCarPos;
+    //[Header("Shield Settings")]
+    //public GameObject shield;
+    //private GameObject RedCar;
+    //private Vector3 RedCarPos;
 
     [Header("Speed Settings")]
     public float speedBoost;
@@ -38,22 +38,14 @@ public class Bonuses : MonoBehaviour
           {
               obj.gameObject.GetComponent<RedCarMovement>().durability += repairPoints;
               Destroy(this.gameObject);
-          }  else if(isShield == true)
-          {
-            RedCar = GameObject.FindWithTag("Player");
-            obj.gameObject.tag = "Shield";
-            RedCarPos = RedCar.transform.position;
-            RedCarPos.z = -0.1f;
-            GameObject shieldObj = (GameObject)Instantiate(shield, RedCarPos, Quaternion.identity);
-            shieldObj.transform.parent = RedCar.transform;
-            Destroy(this.gameObject);
+         
           }else if (isSpeed == true)
           {
             gameObject.GetComponent<SpriteRenderer>().enabled = false;  
             isActivated = true;
             StartCoroutine("SpeedBoostActivated");
           }
-        }else if(obj.gameObject.tag == "EndOfTheRoad" && isActivated == false)
+        }else if(obj.gameObject.tag == "End" && isActivated == false)
         {
             Destroy(this.gameObject);
         }

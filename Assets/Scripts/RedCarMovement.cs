@@ -21,7 +21,7 @@ public class RedCarMovement : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             carPosition = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            carPosition.y = (float)-4.13;
+            carPosition.y = (float)-4.13f;
 
             target.position = carPosition;
 

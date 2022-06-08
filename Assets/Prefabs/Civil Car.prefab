@@ -120,9 +120,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashDamage: 20
-  explosion: {fileID: 0}
+  explosion: {fileID: 4788389478608329679, guid: 1b11c0462dfa6f848bb2d4b413771392, type: 3}
   civilCarSpeed: 5
-  direction: -1
+  direction: -2
   pointsPerCar: 0
 --- !u!61 &-2971077059714906131
 BoxCollider2D:

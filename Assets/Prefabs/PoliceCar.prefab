@@ -200,7 +200,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &4453539856133752994
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -248,7 +248,7 @@ MonoBehaviour:
   isLeft: 1
   policeCarVerticalSpeed: 4
   bulletsInSeries: 3
-  explosion: {fileID: 0}
+  explosion: {fileID: 4788389478608329679, guid: 1b11c0462dfa6f848bb2d4b413771392, type: 3}
   pointsPerCar: 25
 --- !u!1 &4453539857166228558
 GameObject:

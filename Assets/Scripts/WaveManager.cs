@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WaveManager : MonoBehaviour {
@@ -57,8 +56,7 @@ public class WaveManager : MonoBehaviour {
             spawnCar();
             spawnDelay = civilCarSpawnDelay;
         }
-        else if (civilCarsAmount <= 0 && is2ndSpawned == false)
-        {
+        else if (civilCarsAmount <= 0 && is2ndSpawned == false){
             if (isSpawned == false)
             {
                 spawnBanditCar();
@@ -67,8 +65,7 @@ public class WaveManager : MonoBehaviour {
             {
                 spawnBanditCar();
             }
-        }
-        else if (civilCarsAmount <= 0 && policeCarAmount > 0 && spawnedBanditCar == null)
+        }else if (civilCarsAmount <= 0 && policeCarAmount > 0 && spawnedBanditCar == null)
         {
             spawnPoliceCar();
         }
@@ -82,8 +79,7 @@ public class WaveManager : MonoBehaviour {
             spawnedPoliceCar.GetComponent<PoliceCarBehaviour>().isLeft = false;
             isRight = true;
             policeCarAmount--;
-        }
-        else if (GameObject.FindWithTag("Player").gameObject.transform.position.x > -0.51f && isLeft == false)
+        }else if (GameObject.FindWithTag("Player").gameObject.transform.position.x > -0.51f && isLeft == false)
         {
             spawnedPoliceCar = (GameObject)Instantiate(policeCar, new Vector3(-2.05f, -7f, 0), Quaternion.identity);
             spawnedPoliceCar.GetComponent<PoliceCarBehaviour>().isLeft = true;
@@ -103,8 +99,7 @@ public class WaveManager : MonoBehaviour {
         {
             spawnedBanditCar = (GameObject)Instantiate(banditCar, new Vector3(Random.Range(-2.25f, 2.25f), 7f, 0), Quaternion.identity);
             isSpawned = true;
-        }
-        else if (isSpawned == true && is2ndSpawned == false)
+        }else if (isSpawned == true && is2ndSpawned == false)
         {
             if (spawnedBanditCar.transform.position.x < 0.45f)
             {

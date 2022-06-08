@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\CarDurabilityManager.cs" />
      <Compile Include="Assets\Scripts\RoadInfiniteScrolling.cs" />
      <Compile Include="Assets\Scripts\BonusSpawner.cs" />
+     <Compile Include="Assets\Scripts\MenuFunctionality.cs" />
      <Compile Include="Assets\Scripts\Explosion.cs" />
      <Compile Include="Assets\Scripts\BanditCarBehaviour.cs" />
      <Compile Include="Assets\Scripts\RedCarMovement.cs" />

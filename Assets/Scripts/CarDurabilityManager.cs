@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CarDurabilityManager : MonoBehaviour{
@@ -8,10 +7,14 @@ public class CarDurabilityManager : MonoBehaviour{
     public GameObject spawnPoint;
     public TextMesh durabilityText;
     public int lifes;
+    public GameObject EndGameScreen;
+    [HideInInspector]
+    public int maxLifes;
     private GameObject RedCar;
 
     void Start()
     {
+        maxLifes = lifes;
         RedCar = (GameObject)Instantiate(RedCarPrefab, spawnPoint.transform.position, Quaternion.identity);
     }
 
@@ -24,6 +27,10 @@ public class CarDurabilityManager : MonoBehaviour{
             if(lifes > 0)
             {
                StartCoroutine("SpawnaCar");
+            }else if(lifes <=0)
+            {
+              Time.timeScale = 0;
+              EndGameScreen.SetActive(true);  
             }
         } else if (RedCar.GetComponent<RedCarMovement>().durability > RedCar.GetComponent<RedCarMovement>().maxDurability)
         {

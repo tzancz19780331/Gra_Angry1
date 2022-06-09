@@ -35,6 +35,8 @@ public class WaveManager : MonoBehaviour {
     public int pointsPerBomb;
     public int pointsPerPoliceCar;
 
+    public GameObject EndGameScreen;
+
     private float[] lanesArray;
     private float spawnDelay;
 
@@ -68,6 +70,10 @@ public class WaveManager : MonoBehaviour {
         }else if (civilCarsAmount <= 0 && policeCarAmount > 0 && spawnedBanditCar == null)
         {
             spawnPoliceCar();
+        }else if(policeCarAmount <= 0 && isLeft == false && isRight ==false )
+        {
+            Time.timeScale = 0;
+            EndGameScreen.SetActive(true);
         }
     }
 
@@ -100,7 +106,7 @@ public class WaveManager : MonoBehaviour {
             isLeft = true;
             policeCarAmount--;
         }
-        spawnedPoliceCar.GetComponent<PoliceCarBehaviour>().shootingSeriesDelay = shootingSeriesDelay;
+        //spawnedPoliceCar.GetComponent<PoliceCarBehaviour>().shootingSeriesDelay = shootingSeriesDelay;
         spawnedPoliceCar.GetComponent<PoliceCarBehaviour>().singleShotDelay = singleShotDelay;
         spawnedPoliceCar.GetComponent<PoliceCarBehaviour>().bulletsInSeries = bulletsInSeries;
         spawnedPoliceCar.GetComponent<PoliceCarBehaviour>().policeCarVerticalSpeed = policeCarVerticalSpeed;

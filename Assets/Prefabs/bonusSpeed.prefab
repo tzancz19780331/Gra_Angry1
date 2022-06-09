@@ -101,7 +101,7 @@ MonoBehaviour:
   isShield: 0
   isSpeed: 1
   bonusSpeed: 10
-  repairPoints: 0
+  repairPoints: 10
   speedBoost: 1.5
   duration: 5
 --- !u!61 &4800417895984605902

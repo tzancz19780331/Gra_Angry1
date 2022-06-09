@@ -73,13 +73,27 @@ public class WaveManager : MonoBehaviour {
 
     void spawnPoliceCar()
     {
-        if (GameObject.FindWithTag("Player").gameObject.transform.position.x <= -0.51f && isRight == false)
+        Transform RedCarPosition;
+        if(GameObject.FindWithTag("Player"))
+        {
+            RedCarPosition = GameObject.FindWithTag("Player").transform;
+        } else if (GameObject.FindWithTag("Shield"))
+        {
+            RedCarPosition = GameObject.FindWithTag("Shield").transform;
+        } else if (GameObject.FindWithTag("Untouchable"))
+        {
+            RedCarPosition = GameObject.FindWithTag("Untouchable").transform;
+        } else
+        {
+            RedCarPosition = null;
+        }
+        if(RedCarPosition.position.x <= -0.51f && isRight == false)
         {
             spawnedPoliceCar = (GameObject)Instantiate(policeCar, new Vector3(2.05f, -7f, 0), Quaternion.identity);
             spawnedPoliceCar.GetComponent<PoliceCarBehaviour>().isLeft = false;
             isRight = true;
             policeCarAmount--;
-        }else if (GameObject.FindWithTag("Player").gameObject.transform.position.x > -0.51f && isLeft == false)
+        } else if (RedCarPosition.position.x > -0.51f && isLeft == false)
         {
             spawnedPoliceCar = (GameObject)Instantiate(policeCar, new Vector3(-2.05f, -7f, 0), Quaternion.identity);
             spawnedPoliceCar.GetComponent<PoliceCarBehaviour>().isLeft = true;

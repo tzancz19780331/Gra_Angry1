@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\Explosion.cs" />
      <Compile Include="Assets\Scripts\BanditCarBehaviour.cs" />
      <Compile Include="Assets\Scripts\RedCarMovement.cs" />
+     <Compile Include="Assets\Scripts\Pause.cs" />
  <Reference Include="UnityEngine">
  <HintPath>D:/Unity/2020.3.33f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

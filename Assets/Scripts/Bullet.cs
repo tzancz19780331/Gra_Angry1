@@ -20,6 +20,7 @@ public class Bullet : MonoBehaviour{
         {
             obj.gameObject.GetComponent<RedCarMovement>().durability -= bulletDamage;
             GameObject spawnedExplosion = (GameObject)Instantiate(explosion, gameObject.transform.position, Quaternion.identity);
+            spawnedExplosion.GetComponent<AudioSource>().enabled = false;
             spawnedExplosion.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
             Destroy(this.gameObject);
         }

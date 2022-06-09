@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 4453539856133752997}
   - component: {fileID: 4453539856133752994}
   - component: {fileID: 4453539856133752995}
+  - component: {fileID: 7392355239636011483}
   m_Layer: 0
   m_Name: PoliceCar
   m_TagString: Untagged
@@ -242,7 +243,7 @@ MonoBehaviour:
   redLight: {fileID: 4453539857166228912}
   blueLight: {fileID: 4453539855396795043}
   lightDelay: 0.5
-  bullet: {fileID: 8540069773440610917, guid: 0f5a0d422a618d74586c66c735dbd63d, type: 3}
+  bullet: {fileID: 0}
   shootingSeriesDelay: 1.5
   singleShotDelay: 0.25
   isLeft: 1
@@ -250,6 +251,22 @@ MonoBehaviour:
   bulletsInSeries: 3
   explosion: {fileID: 4788389478608329679, guid: 1b11c0462dfa6f848bb2d4b413771392, type: 3}
   pointsPerCar: 25
+--- !u!114 &7392355239636011483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4453539856133752992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26382324842a8644d97dfc833a6fec1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 4788389478608329679, guid: 1b11c0462dfa6f848bb2d4b413771392, type: 3}
+  bulletDamage: 2
+  direction: 0
+  bulletSpeed: 3
 --- !u!1 &4453539857166228558
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,6 +32,7 @@ public class CarDurabilityManager : MonoBehaviour{
                StartCoroutine("SpawnaCar");
             }else if(lifes <=0)
             {
+             
               Time.timeScale = 0;
               EndGameScreen.SetActive(true);  
             }

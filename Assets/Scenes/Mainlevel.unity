@@ -494,7 +494,7 @@ RectTransform:
   m_GameObject: {fileID: 261272759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 1886606147}
   - {fileID: 1865579945}
@@ -903,7 +903,7 @@ GameObject:
   - component: {fileID: 578492477}
   - component: {fileID: 578492476}
   m_Layer: 5
-  m_Name: Retrybutton
+  m_Name: RetryButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1844,7 +1844,6 @@ GameObject:
   - component: {fileID: 1273372249}
   - component: {fileID: 1273372247}
   - component: {fileID: 1273372252}
-  - component: {fileID: 1273372251}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Player
@@ -1914,7 +1913,7 @@ MonoBehaviour:
   RedCarPrefab: {fileID: 4806614490108807787, guid: c4a2df05928f9354c81d0aa6fd64509b, type: 3}
   spawnPoint: {fileID: 922912203}
   durabilityText: {fileID: 1733116768}
-  lifes: 3
+  lifes: 2
   EndGameScreen: {fileID: 261272759}
   maxLifes: 0
 --- !u!114 &1273372243
@@ -1941,7 +1940,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273372239}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 055afecff29c6fc4e966865eef9b6e35, type: 3}
   m_Name: 
@@ -1959,7 +1958,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273372239}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 103eb542bdb06be418fec22ba72e079e, type: 3}
   m_Name: 
@@ -1983,7 +1982,7 @@ MonoBehaviour:
   crashDamage: 20
   explosion: {fileID: 4788389478608329679, guid: 1b11c0462dfa6f848bb2d4b413771392, type: 3}
   civilCarSpeed: 5
-  direction: -1
+  direction: 1
   pointsPerCar: 0
 --- !u!82 &1273372247
 AudioSource:
@@ -2116,24 +2115,6 @@ MonoBehaviour:
   bulletDamage: 5
   direction: 0
   bulletSpeed: 3
---- !u!114 &1273372251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273372239}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95092918052035345bbd8e0d60c6e543, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gainedPointsText: {fileID: 2014487610}
-  extraLifesBonusText: {fileID: 857204535}
-  noCollisionBonusText: {fileID: 435609922}
-  altogetherPointsText: {fileID: 228269935}
-  everyExtraLifeBonus: 1000
-  noCollisionBonus: 10000
 --- !u!114 &1273372252
 MonoBehaviour:
   m_ObjectHideFlags: 0

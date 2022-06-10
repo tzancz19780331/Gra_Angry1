@@ -18,11 +18,11 @@ public class MenuFunctionality : MonoBehaviour {
         redLight.enabled = true;
         blueLight.enabled = false;
 
-        if(PlayerPrefsX.GetIntArray("HighScoreArray", 0, 10)[0] == 0)
-        {
-            int[] highScoresInitializationArray = new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-            PlayerPrefsX.SetIntArray("HighScoreArray", highScoresInitializationArray);
-        }
+       // if(PlayerPrefsX.GetIntArray("HighScoreArray", 0, 10)[0] == 0)
+       // {
+       //     int[] highScoresInitializationArray = new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+       //     PlayerPrefsX.SetIntArray("HighScoreArray", highScoresInitializationArray);
+        //}
     }
 
     void Update()
@@ -43,13 +43,13 @@ public class MenuFunctionality : MonoBehaviour {
 
     public void HighScoresButton()
     {
-        GameObject.Find("Menu").SetActive(false);
-        highScores.SetActive(true);
+       // GameObject.Find("Menu").SetActive(false);
+       // highScores.SetActive(true);
     }
 
     public void OptionsButton()
     {
-        SceneManager.LoadScene(3);
+       // SceneManager.LoadScene(3);
     }
 
     public void ExitButton()
@@ -57,9 +57,9 @@ public class MenuFunctionality : MonoBehaviour {
         Application.Quit();
     }
 
-    public void GoBackButton()
-    {
-        highScores.SetActive(false);
-        menuButtons.SetActive(true);
-    }
+   // public void GoBackButton()
+   // {
+       // highScores.SetActive(false);
+       // menuButtons.SetActive(true);
+   // }
 }

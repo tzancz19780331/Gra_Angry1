@@ -36,8 +36,8 @@ public class Bonuses : MonoBehaviour
         {
           if(isDurability == true)
           {
-              obj.gameObject.GetComponent<RedCarMovement>().durability += repairPoints;
-              Destroy(this.gameObject);
+                obj.gameObject.GetComponent<RedCarMovement>().durability += repairPoints;
+                Destroy(this.gameObject);
          
           }else if (isSpeed == true)
           {

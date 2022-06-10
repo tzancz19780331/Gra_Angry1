@@ -1,8 +1,8 @@
 using System.Collections;
 using UnityEngine;
 
-public class PoliceCarBehaviour : MonoBehaviour
-{
+public class PoliceCarBehaviour : MonoBehaviour{
+
     public Light redLight;
     public Light blueLight;
     public float lightDelay;
@@ -14,7 +14,6 @@ public class PoliceCarBehaviour : MonoBehaviour
     public int bulletsInSeries;
     public GameObject explosion;
     public AudioClip shotSound;
-
     [HideInInspector]
     public int pointsPerCar;
     private AudioSource audio;

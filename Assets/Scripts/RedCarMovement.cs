@@ -7,11 +7,12 @@ public class RedCarMovement : MonoBehaviour {
     Vector2 carPosition ;
 
     public float maxDurability = 100f;
-    //[HideInInspector]
+    [HideInInspector]
     public float durability;
     
     public float CarSpeed;
-    private void Start()
+   
+    void Start()
     {
         carPosition = transform.position;
         durability = maxDurability;

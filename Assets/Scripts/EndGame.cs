@@ -56,11 +56,13 @@ public class EndGame : MonoBehaviour {
 
     public void RetryButton()
     {
-        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(1);
     }
 
     public void MenuExitButton()
     {
-        SceneManager.LoadScene(1);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
     }
 }

@@ -102,8 +102,9 @@ MonoBehaviour:
   isSpeed: 0
   bonusSpeed: 10
   repairPoints: 25
-  speedBoost: 0
-  duration: 0
+  shield: {fileID: 0}
+  speedBoost: 1.5
+  duration: 5
 --- !u!61 &3436273266657743791
 BoxCollider2D:
   m_ObjectHideFlags: 0

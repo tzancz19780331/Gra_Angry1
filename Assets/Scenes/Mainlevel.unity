@@ -519,7 +519,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261272759}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95092918052035345bbd8e0d60c6e543, type: 3}
   m_Name: 
@@ -528,8 +528,8 @@ MonoBehaviour:
   extraLifesBonusText: {fileID: 857204535}
   noCollisionBonusText: {fileID: 435609922}
   altogetherPointsText: {fileID: 228269935}
-  everyExtraLifeBonus: 300
-  noCollisionBonus: 2000
+  everyExtraLifeBonus: 1000
+  noCollisionBonus: 10000
 --- !u!1 &364905882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,17 +1866,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   civilCar: {fileID: 3239680648720164630, guid: 7c7d39cf3fd985f41adb438b83b1e807, type: 3}
   civilCarSpawnDelay: 1
-  civilCarsAmount: 5
+  civilCarsAmount: 6
   banditCar: {fileID: 7935147759758849054, guid: f3c221d93b8513a4f9acced78127a290, type: 3}
   bombsAmount: 5
   banditCarVerticalSpeed: 5
   banditVarHorizontalSpeed: 2
   bombDelay: 1
   policeCar: {fileID: 4453539856133752992, guid: fbf207f8687dc08429642c338ade867a, type: 3}
-  policeCarAmount: 1
+  policeCarAmount: 2
   shootingSeriesDelay: 1.5
   singleShotDelay: 0.25
-  policeCarVerticalSpeed: 3
+  policeCarVerticalSpeed: 5
   bulletsInSeries: 3
   pointsPerCivilCar: 10
   pointsPerBanditCar: 15
@@ -1914,7 +1914,7 @@ MonoBehaviour:
   RedCarPrefab: {fileID: 4806614490108807787, guid: c4a2df05928f9354c81d0aa6fd64509b, type: 3}
   spawnPoint: {fileID: 922912203}
   durabilityText: {fileID: 1733116768}
-  lifes: 2
+  lifes: 3
   EndGameScreen: {fileID: 261272759}
   maxLifes: 0
 --- !u!114 &1273372243
@@ -2128,12 +2128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95092918052035345bbd8e0d60c6e543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gainedPointsText: {fileID: 0}
-  extraLifesBonusText: {fileID: 0}
-  noCollisionBonusText: {fileID: 0}
-  altogetherPointsText: {fileID: 0}
-  everyExtraLifeBonus: 200
-  noCollisionBonus: 500
+  gainedPointsText: {fileID: 2014487610}
+  extraLifesBonusText: {fileID: 857204535}
+  noCollisionBonusText: {fileID: 435609922}
+  altogetherPointsText: {fileID: 228269935}
+  everyExtraLifeBonus: 1000
+  noCollisionBonus: 10000
 --- !u!114 &1273372252
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7204889447935867435}
   m_Layer: 0
   m_Name: bonusSpeed
-  m_TagString: Untagged
+  m_TagString: EndOfTheRoad
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   isShield: 0
   isSpeed: 1
   bonusSpeed: 10
-  repairPoints: 10
+  repairPoints: 0
   speedBoost: 1.5
   duration: 5
 --- !u!61 &4800417895984605902

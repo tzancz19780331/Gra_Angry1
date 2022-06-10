@@ -161,7 +161,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ebcd1fd90b888e449ca1cb485902bec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedCarPrefab: {fileID: 0}
+  RedCarPrefab: {fileID: 4806614490108807787, guid: c4a2df05928f9354c81d0aa6fd64509b, type: 3}
   spawnPoint: {fileID: 0}
   durabilityText: {fileID: 0}
   lifes: 0
+  EndGameScreen: {fileID: 0}
+  maxLifes: 0

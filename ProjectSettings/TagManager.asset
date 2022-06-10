@@ -8,6 +8,7 @@ TagManager:
   - Untouchable
   - Shield
   - Barrier
+  - GameManager
   layers:
   - Default
   - TransparentFX

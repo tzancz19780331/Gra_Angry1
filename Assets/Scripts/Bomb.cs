@@ -6,7 +6,7 @@ public class Bomb : MonoBehaviour{
     public GameObject explosion;
     public int bombDamage;
     public float bombSpeed;
-    //[HideInInspector]
+    [HideInInspector]
     public int pointsPerBomb;
 
   void Update()

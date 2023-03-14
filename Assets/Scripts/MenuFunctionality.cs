@@ -18,6 +18,8 @@ public class MenuFunctionality : MonoBehaviour {
         redLight.enabled = true;
         blueLight.enabled = false;
 
+        
+
         if(PlayerPrefsX.GetIntArray("HighScoreArray", 0, 10)[0] == 0)
         {
             int[] highScoresInitializationArray = new int[10] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};

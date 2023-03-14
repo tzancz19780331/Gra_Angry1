@@ -14,7 +14,7 @@ public class PoliceCarBehaviour : MonoBehaviour{
     public int bulletsInSeries;
     public GameObject explosion;
     public AudioClip shotSound;
-    [HideInInspector]
+    //HideInInspector]
     public int pointsPerCar;
     private AudioSource audio;
     private float lightShowDelay;

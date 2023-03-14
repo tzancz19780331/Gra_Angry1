@@ -20,7 +20,7 @@ public class EndGame : MonoBehaviour {
     private int [] HighScoresArray = new int[10];
 
     void Start () {
-        //HighScoresArray = PlayerPrefsX.GetIntArray("HighScoreArray");
+        HighScoresArray = PlayerPrefsX.GetIntArray("HighScoreArray");
         gainedPointsText.text = PointsManager.points.ToString();
         GameManager = GameObject.Find("Game Manager");
         extraLifesBonusText.text = (GameManager.GetComponent<CarDurabilityManager>().lifes * everyExtraLifeBonus).ToString();
